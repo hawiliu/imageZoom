@@ -48,7 +48,7 @@
             // 
             // tb_Height
             // 
-            this.tb_Height.Location = new System.Drawing.Point(81, 44);
+            this.tb_Height.Location = new System.Drawing.Point(81, 41);
             this.tb_Height.Name = "tb_Height";
             this.tb_Height.Size = new System.Drawing.Size(100, 22);
             this.tb_Height.TabIndex = 1;
@@ -71,7 +71,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 19);
+            this.label1.Location = new System.Drawing.Point(29, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 12);
             this.label1.TabIndex = 3;
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 50);
+            this.label2.Location = new System.Drawing.Point(27, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 12);
             this.label2.TabIndex = 4;
@@ -92,7 +92,7 @@
             this.cb_Type.Items.AddRange(new object[] {
             "jpg",
             "png"});
-            this.cb_Type.Location = new System.Drawing.Point(81, 71);
+            this.cb_Type.Location = new System.Drawing.Point(81, 69);
             this.cb_Type.Name = "cb_Type";
             this.cb_Type.Size = new System.Drawing.Size(100, 20);
             this.cb_Type.TabIndex = 5;
@@ -101,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 77);
+            this.label3.Location = new System.Drawing.Point(12, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 12);
             this.label3.TabIndex = 6;

@@ -14,8 +14,6 @@ namespace imageZoom
 {
     public partial class mainForm : Form
     {
-        string OutputFolder = System.Environment.CurrentDirectory + @"\Output";
-
         public mainForm()
         {
             InitializeComponent();
@@ -38,11 +36,14 @@ namespace imageZoom
                         foreach (var file in openFileDialog.FileNames)
                         {
                             string filename = Path.GetFileNameWithoutExtension(file);
-                            string filepath = Path.GetDirectoryName(file);
+                            string filepath = Path.GetDirectoryName(file) + @"\resize";
+                            if (!Directory.Exists(filepath))
+                                Directory.CreateDirectory(filepath);
+
                             Image original = Image.FromFile(file);
 
                             Image output = (Image)(new Bitmap(original, new Size(Convert.ToInt32(tb_Width.Text), Convert.ToInt32(tb_Height.Text))));
-                            output.Save(filepath + @"\new_" + filename + "." + type, format);
+                            output.Save(filepath + @"\" + filename + "." + type, format);
                             output.Dispose();
                             original.Dispose();
                         }
