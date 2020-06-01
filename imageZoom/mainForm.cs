@@ -25,7 +25,7 @@ namespace imageZoom
             int Height = 0;
 
             string type = cb_Type.Text;
-            ImageFormat format = type.Equals("jpg") ? ImageFormat.Jpeg : ImageFormat.Png;
+            ImageFormat format = type.ToLower().Equals("jpg") ? ImageFormat.Jpeg : ImageFormat.Png;
 
             if (int.TryParse(tb_Width.Text, out Width) && int.TryParse(tb_Height.Text, out Height))
             {
